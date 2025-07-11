@@ -16,6 +16,10 @@
 # 网络
 ## 网站搭建
 ## 个人知识库
+当前知识库
+Docsify-Guide技术
+控制台运行docsify serve
+在http://localhost:3000/地址进行预览
 ## AI相关
 # 其他
 
