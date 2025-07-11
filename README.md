@@ -15,3 +15,6 @@ print("hello, http://www.cvtutorials.com")
 ## csdn
 csdn: 机器视觉全栈er
 链接：https://blog.csdn.net/qq_42322191
+
+本地测试
+启动本地服务器: docsify serve 访问 http://localhost:3000
