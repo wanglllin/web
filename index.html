@@ -1,29 +1,53 @@
-<template>
-  <div>
-    <v-form-render :form-json="formJson" :form-data="formData" :option-data="optionData" ref="vFormRef">
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<title>VForm Demo</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.15.7/theme-chalk/index.min.css">
+	<link rel="stylesheet" href="https://ks3-cn-beijing.ksyun.com/vform2021/VFormRender.css?t=20210720">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+  <div id="app">
+	  <v-form-render :form-json="formJson" :form-data="formData" :option-data="optionData" ref="vFormRef">
     </v-form-render>
-    <el-button type="primary" @click="submitForm">Submit</el-button>
+	  <el-button type="primary" @click="submitForm">Submit</el-button>
   </div>
-</template>
+
+<script type="text/javascript">
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //IE load polyfill.js for Promise
+    var scriptEle = document.createElement("script");
+    scriptEle.type = "text/javascript";
+    scriptEle.src = "https://cdn.bootcss.com/babel-polyfill/6.23.0/polyfill.min.js"
+    document.body.appendChild(scriptEle)
+  }
+</script>
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.14/vue.min.js"></script>
+<script src="https://cdn.staticfile.org/element-ui/2.15.7/index.min.js"></script>
+<script src="https://ks3-cn-beijing.ksyun.com/vform2021/VFormRender.umd.min.js?t=20210720"></script>
 <script>
-  export default {
-    data() {
-      return {
+	new Vue({
+      el: '#app',
+      data: {
         formJson: {"widgetList":[{"type":"tab","category":"container","icon":"tab","displayType":"border-card","tabs":[{"type":"tab-pane","category":"container","icon":"tab-pane","internal":true,"widgetList":[{"type":"button","icon":"button","formItemFlag":false,"options":{"name":"button73179","label":"button","columnWidth":"200px","size":"","displayStyle":"inline","disabled":false,"hidden":false,"type":"","plain":false,"round":false,"circle":false,"icon":null,"customClass":[],"onCreated":"","onMounted":"","onClick":""},"id":"button73179"},{"type":"button","icon":"button","formItemFlag":false,"options":{"name":"button116208","label":"button","columnWidth":"200px","size":"","displayStyle":"inline","disabled":false,"hidden":false,"type":"","plain":false,"round":false,"circle":false,"icon":null,"customClass":[],"onCreated":"","onMounted":"","onClick":"var result = confirm(\"你确定要执行此操作吗？\");\r\nif (result) {\r\nconsole.log(\"用户点击了确定\");\r\n} else {\r\nconsole.log(\"用户点击了取消\");\r\n}"},"id":"button116208"},{"type":"grid","category":"container","icon":"grid","cols":[{"type":"grid-col","category":"container","icon":"grid-col","internal":true,"widgetList":[],"options":{"name":"gridCol111722","hidden":false,"span":4,"offset":4,"push":0,"pull":0,"responsive":false,"md":12,"sm":12,"xs":12,"customClass":""},"id":"grid-col-111722"},{"type":"grid-col","category":"container","icon":"grid-col","internal":true,"widgetList":[],"options":{"name":"gridCol60830","hidden":false,"span":12,"offset":0,"push":0,"pull":0,"responsive":false,"md":12,"sm":12,"xs":12,"customClass":""},"id":"grid-col-60830"}],"options":{"name":"grid108475","hidden":false,"gutter":12,"colHeight":null,"customClass":[]},"id":"grid108475"}],"options":{"name":"tab1","label":"tab 1","hidden":false,"active":false,"disabled":false,"customClass":""},"id":"tab-pane-53799"}],"options":{"name":"tab75148","hidden":false,"customClass":[]},"id":"tab75148"},{"type":"tab","category":"container","icon":"tab","displayType":"border-card","tabs":[{"type":"tab-pane","category":"container","icon":"tab-pane","internal":true,"widgetList":[],"options":{"name":"tab1","label":"tab 1","hidden":false,"active":false,"disabled":false,"customClass":""},"id":"tab-pane-28491"}],"options":{"name":"tab45812","hidden":false,"customClass":[]},"id":"tab45812"},{"type":"grid","category":"container","icon":"grid","cols":[{"type":"grid-col","category":"container","icon":"grid-col","internal":true,"widgetList":[{"type":"static-text","icon":"static-text","formItemFlag":false,"options":{"name":"statictext109666","columnWidth":"200px","hidden":false,"textContent":"static text","textAlign":"left","fontSize":"13px","preWrap":false,"customClass":"","onCreated":"","onMounted":"","label":"static-text"},"id":"statictext109666"}],"options":{"name":"gridCol33990","hidden":false,"span":12,"offset":0,"push":0,"pull":0,"responsive":false,"md":12,"sm":12,"xs":12,"customClass":""},"id":"grid-col-33990"},{"type":"grid-col","category":"container","icon":"grid-col","internal":true,"widgetList":[{"type":"static-text","icon":"static-text","formItemFlag":false,"options":{"name":"statictext69895","columnWidth":"200px","hidden":false,"textContent":"static text","textAlign":"left","fontSize":"13px","preWrap":false,"customClass":"","onCreated":"","onMounted":"","label":"static-text"},"id":"statictext69895"}],"options":{"name":"gridCol60781","hidden":false,"span":12,"offset":0,"push":0,"pull":0,"responsive":false,"md":12,"sm":12,"xs":12,"customClass":""},"id":"grid-col-60781"},{"type":"grid-col","category":"container","icon":"grid-col","internal":true,"widgetList":[{"type":"static-text","icon":"static-text","formItemFlag":false,"options":{"name":"statictext80926","columnWidth":"200px","hidden":false,"textContent":"static text","textAlign":"left","fontSize":"13px","preWrap":false,"customClass":"","onCreated":"","onMounted":"","label":"static-text"},"id":"statictext80926"}],"options":{"name":"gridCol11747","hidden":false,"span":12,"offset":0,"push":0,"pull":0,"responsive":false,"md":12,"sm":12,"xs":12,"customClass":""},"id":"grid-col-11747"},{"type":"grid-col","category":"container","icon":"grid-col","internal":true,"widgetList":[{"type":"static-text","icon":"static-text","formItemFlag":false,"options":{"name":"statictext91238","columnWidth":"200px","hidden":false,"textContent":"static text","textAlign":"left","fontSize":"13px","preWrap":false,"customClass":"","onCreated":"","onMounted":"","label":"static-text"},"id":"statictext91238"}],"options":{"name":"gridCol28273","hidden":false,"span":12,"offset":0,"push":0,"pull":0,"responsive":false,"md":12,"sm":12,"xs":12,"customClass":""},"id":"grid-col-28273"},{"type":"grid-col","category":"container","icon":"grid-col","internal":true,"widgetList":[{"type":"static-text","icon":"static-text","formItemFlag":false,"options":{"name":"statictext72233","columnWidth":"200px","hidden":false,"textContent":"static text","textAlign":"left","fontSize":"13px","preWrap":false,"customClass":"","onCreated":"","onMounted":"","label":"static-text"},"id":"statictext72233"}],"options":{"name":"gridCol32211","hidden":false,"span":12,"offset":0,"push":0,"pull":0,"responsive":false,"md":12,"sm":12,"xs":12,"customClass":""},"id":"grid-col-32211"},{"type":"grid-col","category":"container","icon":"grid-col","internal":true,"widgetList":[{"type":"static-text","icon":"static-text","formItemFlag":false,"options":{"name":"statictext88011","columnWidth":"200px","hidden":false,"textContent":"static text","textAlign":"left","fontSize":"13px","preWrap":false,"customClass":"","onCreated":"","onMounted":"","label":"static-text"},"id":"statictext88011"}],"options":{"name":"gridCol76531","hidden":false,"span":12,"offset":0,"push":0,"pull":0,"responsive":false,"md":12,"sm":12,"xs":12,"customClass":""},"id":"grid-col-76531"}],"options":{"name":"grid43385","hidden":false,"gutter":12,"colHeight":null,"customClass":[]},"id":"grid43385"}],"formConfig":{"modelName":"formData","refName":"vForm","rulesName":"rules","labelWidth":80,"labelPosition":"left","size":"","labelAlign":"label-left-align","cssCode":"","customClass":[],"functions":"","layoutType":"PC","onFormCreated":"","onFormMounted":"","onFormDataChange":""}},
         formData: {},
         optionData: {}
+      },
+      methods: {
+        submitForm() {
+          this.$refs.vFormRef.getFormData().then( function(formData) {
+            // Form Validation OK
+            alert( JSON.stringify(formData) )
+          }).catch( function(error) {
+            // Form Validation Failed
+            alert(error)
+          })
+        }
       }
-    },
-    methods: {
-      submitForm() {
-        this.$refs.vFormRef.getFormData().then(formData => {
-          // Form Validation OK
-          alert( JSON.stringify(formData) )
-        }).catch(error => {
-          // Form Validation failed
-          this.$message.error(error)
-        })
-      }
-    }
-  }
+	});
 </script>
+</body>
+</html>
