@@ -18,3 +18,4 @@
 - 边缘: jetson系列
 - 智能视频处理：deepstream, dl-stream
 - 其他(仅限简单使用): XR, 语音识别
+- 
