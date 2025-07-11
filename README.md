@@ -1,26 +1,17 @@
-# PLC
-## 倍福
-## 三菱
-## omron
+## 个人网站
 
-# 机器人
-## 发那科
-## 安川
-## 众为兴
-## 爱普生
-# 编程
-## c#
-## python
-## JavaScript
+![](./assets/cvtutorials.png)
 
-# 网络
-## 网站搭建
-## 个人知识库
-当前知识库
-Docsify-Guide技术
-控制台运行docsify serve
-在http://localhost:3000/地址进行预览
-## AI相关
-# 其他
+docsify效果demo展示：http://www.cvtutorials.com
 
-> An awesome project.
+点击图中箭头所指，可以查看docsify文档教程
+
+![](/assets/hello.png)
+
+
+```python
+print("hello, http://www.cvtutorials.com")
+```
+## csdn
+csdn: 机器视觉全栈er
+链接：https://blog.csdn.net/qq_42322191
